@@ -1,4 +1,5 @@
 # 一个简单的读取csv文件的例子
+#使用list来装在数据.
 
 import csv
 
@@ -22,4 +23,5 @@ def writer(filepath) :
             tooldwrite.writerow(item)
 
 if __name__=='__main__' :
-    writer('./tooldesc.csv')
+    #writer('./tooldesc.csv')
+    reader('./toolhire.csv')

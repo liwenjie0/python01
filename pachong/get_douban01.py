@@ -62,6 +62,8 @@ week=soup.find('div',id='ranking').find('ul',id='listCont2')
 print('-'*80)
 print("本周口碑榜...",soup.find('div',id='ranking').find('ul',id='listCont2')\
       .find('li').get_text())
+print("本周口碑榜...",soup.find('div',id='ranking').find('ul',id='listCont2')\
+      .find('li').find('span')['class'])
 f.write('-'*80+'\n'+\
         "本周口碑榜..."+soup.find('div',id='ranking').find('ul',id='listCont2').find('li').get_text()+\
         '\n')
